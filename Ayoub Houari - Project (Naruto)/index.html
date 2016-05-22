@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+    <head>
+		
+        <title>Naruto - The Game</title>
+        
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/naruto.ico" >
+
+        
+        <link rel="stylesheet" href="css/stijl.css">
+        
+        <!-- <script src="js/jquery-ui.js"></script> -->
+        <script src="js/jquery-1.8.3.js"></script>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <script src="js/functies.js"></script>
+    
+    </head>
+    
+    <body>
+        
+        
+        <!-- **************** MUTE & SETTINGS **************** -->
+        <input type="image" alt="mute" name="mute" id="muteSound" src="img/sound.png">
+        
+        
+        
+
+        
+        
+        <!-- **************** START **************** -->
+        <div id="start">
+        
+        <!-- <img src="img/start.jpg" id="startpic"> -->
+        <audio id="musicstart" loop><source src="sound/muziek/07%20-%20Utsusemi.mp3"></audio>
+        <audio id="startshot"><source src="sound/startShot.mp3"></audio>
+        <p id="startmsg">Press ENTER to start</p>
+        
+        </div>
+        
+        
+        
+        
+        <!-- **************** INTRO **************** -->
+        <div id="story">
+            <p id="intromsg"></p>
+            <input type="button" name="skipIntro" id="skipIntro" value="Skip">
+        </div>
+        
+        
+        
+        <!-- **************** GAME **************** -->
+    <div id="hidden">
+        
+        <input type="image" alt="openSettings" name="openSettings" id="openSettings" src="img/settings.png">
+        <div id="settings">
+            <div id="leftD">    <img alt="leftb"     id="leftKey"    src="img/keys/key-left.png">    <p>Run left</p></div>
+            <div id="rightD">   <img alt="rightb"    id="rightKey"   src="img/keys/key-right.png">   <p>Run right</p></div>
+            <div id="xD">       <img alt="xb"        id="xKey"       src="img/keys/key-x.png">       <p>Special attack</p></div>
+            <div id="cD">       <img alt="cb"        id="cKey"       src="img/keys/key-c.png">       <p>Action</p></div>
+            <div id="spaceD">   <img alt="spaceb"    id="spaceKey"   src="img/keys/key-space.png">   <p>Basic attack</p></div>
+            <input type="image" alt="close" id="closeSettings" src="img/no.png">
+        </div>
+        
+        
+        <!-- Health & Energy -->
+            <div id="bars">
+                <img src="img/health5.png" alt="health" id="healthBar"><br>
+                <img src="img/energy3.png" alt="energy" id="energyBar">
+            </div>
+        
+        
+        <!-- GamePad -->
+            <div id="gamePad">
+                <input type="image" alt="left"  id="leftPad"    src="img/left-button.png">
+                <input type="image" alt="right" id="rightPad"   src="img/right-button.png">
+                <input type="image" alt="space" id="spacePad"   src="img/space.png">
+                <input type="image" alt="x"     id="xPad"       src="img/x-button.png">
+                <input type="image" alt="c"     id="cPad"       src="img/c-button.png">
+            </div>
+        
+        
+        
+        
+    <div id="game">
+        
+        
+        <div id="gamePlay">
+        <audio id="themeforest" loop>   <source src="sound/foresttheme.mp3"></audio>
+        <audio id="themetown" loop>     <source src="sound/towntheme.mp3"></audio>
+        <audio id="musictown" loop>     <source src="sound/muziek/16%20-%20Kokon%20Musou.mp3"></audio>
+        <audio id="musictemple" loop>   <source src="sound/muziek/06%20-%20Ninmu.mp3"></audio>
+        <audio id="musictown2" loop>    <source src="sound/muziek/03%20-%20Kikyou.mp3"></audio>
+        <audio id="nighttheme" loop>    <source src="sound/nighttheme.mp3"></audio>
+        <audio id="raintheme" loop>  <source src="sound/rain.mp3"></audio> -->
+        <audio id="evilmusic" loop>       <source src="sound/muziek/05%20-%20Denkousekka.mp3"></audio>
+        
+            
+            
+            
+            
+            
+            
+            <!-- Naruto -->
+            <div id="naruto">
+                <img src="img/naruto_standing1.gif" alt="naruto">
+                <audio id="punchsound"> <source src="sound/punch-1.wav"> </audio>
+                <audio id="run">        <source src="sound/run.wav"> </audio>
+                <audio id="special">    <source src="sound/Rasengan.mp3"> </audio>
+                <audio id="chakra" loop><source src="sound/kyuubi%20rasengan.wav"> </audio>
+                <audio id="narutoWin"><source src="sound/narutoWin.mp3"> </audio>
+                
+            </div>
+        
+            
+            <!-- little Boy -->
+            <div id="littleBoy">
+                <p id="littleBoyText"></p>
+                <img src="img/littleBoy.gif"  alt="littleBoy">
+                <audio id="littleBoySound"> <source src="sound/littleBoySound.mp3"> </audio>
+            </div>
+            
+            
+            <!-- leader -->
+            <div id="leader">
+                <p id="leaderText"></p>
+                <img src="img/leader.gif"  alt="leader">
+                <audio id="leaderHey">  <source src="sound/hey.wav"> </audio>
+                <audio id="leaderMmm">  <source src="sound/mmm.wav"> </audio>
+                <audio id="leaderGood"> <source src="sound/good.wav"> </audio>
+            </div>
+            
+            
+            <!-- Dog -->
+            <div id="dog">
+                <img src="img/dog.gif" alt="dog">
+                <audio id="dogSound"> <source src="sound/dog.wav"> </audio>
+            </div>
+            
+            
+            <!-- Evil -->
+            <div id="evil">
+                <p id="evilText"></p>
+                <img src="img/evilstart.gif"  alt="evil">
+                <audio id="evilSound"> <source src="sound/punch-2.wav"> </audio>
+                <audio id="evilHey"> <source src="sound/evilHey.mp3"> </audio>
+                <audio id="evilWin"> <source src="sound/evilWin.mp3"> </audio>
+                <audio id="evilDead"> <source src="sound/evilDead.mp3"> </audio> 
+            </div> 
+            
+            
+            <!-- Heart -->
+            <div id="heart">
+                <img src="img/heart.png"  alt="heart">
+                <audio id="hearthSound"> <source src="sound/health-pickup.wav"> </audio>
+                <audio id="heartBeat" loop> <source src="sound/Hearbeat.mp3"> </audio>
+            </div> 
+            
+
+            <div id="gameControl"></div>
+        </div>
+        
+    </div>
+    </div>
+        
+        
+        <!-- **************** Finisch **************** -->
+        
+        <p id="finishMsg"></p>
+        
+        <div id="finish">
+            <p>Enter your name</p>
+            <input type="text" id="enterName">
+            <input type="submit" id="submitFinish" value="Submit">
+            <audio id="winSound"> <source src="sound/muziek/04%20-%20Sengunbanba.mp3"> </audio>
+        </div>
+        
+        <div id="lose">
+            <input type="button" name="tryAgain" id="tryAgain" value="Try again"><br>
+            <input type="button" name="Quit" id="quit" value="Quit"  onclick="history.go(0)">
+            <audio id="gameoverSound"> <source src="sound/GameOver.mp3"> </audio>
+        </div>
+        
+	</body>
+</html>
